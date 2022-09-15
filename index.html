@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>REGISTRO</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>index</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!--Barra de navegación estándar -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+        <a class="navbar-brand text-white" href="#">"Pos haber estudiao!"</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">Academia<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Encuentranos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">REDES</a>
+                        <a class="dropdown-item" href="#">PROGRAMACIÓN</a>
+                        <a class="dropdown-item" href="#">SEGURIDAD</a>
+                        <a class="dropdown-item" href="#">DESARROLLO WEB</a>
+                        <a class="dropdown-item" href="#">DESARROLLO MÓVIL</a>
+                        <a class="dropdown-item" href="#">MANTENIMIENTO DE SISTEMAS</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2  text-white bg-dark" type="text" placeholder="Escribe aquí lo que quieres buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">🔍</button>
+            </form>
+        </div>
+      </nav>
+      <!--FORMULARIO para recoger datos de un nuevo usuario para darse de alta en una academia que oferta cursos-->
+      <div class="container-fluid bg-secondary">
+        <h2><p class="text-white bg-warning">REGISTRO ACADEMIA "POS HABER ESTUDIAO!"</p></h2>
+        <form>
+            <div class="form-row text-white">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Nombre</label>
+                  <input type="name" class="form-control" id="inputName" placeholder="Escriba su nombre">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Apellidos</label>
+                  <input type="surname" class="form-control" id="inputSurname" placeholder="Escriba sus apellidos">
+                </div>
+              </div>
+            <div class="form-row text-white">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Correo electrónico</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Escriba su correo">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+              </div>
+            </div>
+            <div class="form-row text-white">
+              <div class="form-group col-md-6">
+                <label for="inputState">Region</label>
+                <select id="inputCity" class="form-control">
+                    <option selected>Castilla-La Mancha</option>
+                    <option>Otra</option>
+                  </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputCity">Provincia</label>
+                <select id="inputCity" class="form-control">
+                  <option selected>Toledo</option>
+                  <option>Guadalajara</option>
+                  <option>Cuenca</option>
+                  <option>Albacete</option>
+                  <option>Ciudad Real</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputCode">Código postal</label>
+                <input type="text" class="form-control" id="inputCode">
+              </div>
+            </div>
+            <div class="form-row text-white">
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Avenida Perico de los palotes 69">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputAddress2">Dirección 2 (Opcional)</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Rue del Percebe 13">
+                </div>
+            </div>
+            <div class="form-row text-white">
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">Estudios anteriores</label>
+                    <input type="text" class="form-control" id="inputStudies" placeholder="Bachillerato, FP de grado medio en SMR, etc">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputCurse">¿Qué curso te gustaría hacer?</label>
+                    <select id="inputCurse" class="form-control">
+                        <option selected>REDES</option>
+                        <option>PROGRAMACIÓN</option>
+                        <option>SEGURIDAD</option>
+                        <option>DESARROLLO WEB</option>
+                        <option>DESARROLLO MOVIL</option>
+                        <option>MANTENIMIENTO DE SISTEMAS</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group text-white">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  No he leido y acepto la política de protección de datos
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+          </form>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
